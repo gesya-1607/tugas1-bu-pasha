@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style media="screen">
+        .container{
+            width: 50%;
+            height: 200px;
+            overflow: auto;
+            margin-left: 0 auto;
+        }
+        .static{ position: static; border: 2px solid green;}
+        .relative{
+            position: relative;
+            border: 2px solid red;
+            left: 20px; /* jarak dari posisi paling kiri sebesar 20px */
+            bottom: 0; /* jarak dari posisi paling bawah sebesar 0px*/
+        }
+        .absolute{ position: absolute; border: 2px solid blue; left: 20px; bottom: 40px;}
+        .fixed{ position: fixed; border: 2px solid black; bottom: 0; right: 0;}
+        .sticky{
+            position: sticky;
+            border: 2px solid yellow;
+            top: 0;
+            left: 20px;
+            background: darkblue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="sticky>">
+        <!--ini adalah contoh dari proses sticky-->
+        </p>
+        <p class="static">
+            <b>ini adalah contoh dari position static</b> <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Molestias esse, reiciendis sint possimus repellat consequatur 
+            modi itaque dignissimos asperiores commodi id deleniti voluptatem 
+            repellendus sit tempore voluptatibus. Voluptates, saepe laboriosam.
+        </p>
+
+        <p class="relative">
+            <b>ini adalah contoh dari position relative</b> <b>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas, 
+            provident omnis tempora asperiores quisquam, aspernatur sed delectus 
+            a nulla fuga neque dicta. Iusto doloribus fugiat ea illum earum error magni.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum et nobis 
+            repudiandae officiis. Repellat porro labore velit tempora, quaerat, in esse sunt 
+            nesciunt corrupti repudiandae quisquam perspiciatis! Ipsum, tempora aut!
+        </p>
+
+        <p class="absolute">
+            <b>ini adalah contoh dari position absolute</b> <b>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Blanditiis corrupti iusto minus dolores velit possimus, 
+            qui autem officiis magni sequi quo? Amet reprehenderit 
+            nostrum debitis autem architecto fuga, dolores assumenda.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Voluptate excepturi sed quis esse placeat. Velit quasi porro 
+            aspernatur eaque quidem? Iusto ad exercitationem alias quam iste 
+            dolores cumque tempore excepturi?
+        </p>
+
+        <p class="fixed">
+            <b>ini merupakan contoh dari position fixed</b>
+        </p>
+    </div>
+</body>
+</html>
